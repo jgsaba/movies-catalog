@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: testuser
+    password: testpassword
+    jpa:
+      hibernate:
+        ddl-auto: update
+
+minio:
+  uri: http://localhost:33155
+  access-key: minioadmin
+  secret-key: minioadmin
+
+test:
+  valid-credentials:
+    user-email: user1@example.com
+    admin-email: user2@example.com
+    password: password1
+
+server:
+  port: 8081
+
+jwt:
+  issuer: movies-api
+  secret: raven_test

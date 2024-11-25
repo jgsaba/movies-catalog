@@ -1,0 +1,23 @@
+
+minio:
+  uri: http://minio:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+  datasource:
+    url: jdbc:postgresql://db:5432/mydb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  issuer: movies-api
+  secret: raven_test
